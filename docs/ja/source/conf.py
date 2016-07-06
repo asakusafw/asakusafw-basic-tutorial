@@ -37,7 +37,6 @@ extensions = [
 
 # -- EXTENSIONS ----------------------------------------------------------------
 [extensions]
-todo_include_todos = True
 
 extlinks = {
     'asakusafw': ('http://docs.asakusafw.com/0.8.0/release/ja/html/%s',  None),
@@ -121,7 +120,7 @@ pygments_style = 'sphinx'
 #keep_warnings = False
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
-todo_include_todos = True
+todo_include_todos = False
 
 
 # -- Options for HTML output ----------------------------------------------
