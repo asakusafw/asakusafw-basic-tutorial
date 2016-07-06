@@ -2,7 +2,7 @@
 
 Basic tutorial documentation for [Asakusa Framework](https://github.com/asakusafw/asakusafw).
 
-** Sorry, this documentation is currently Japanese only. **
+**Sorry, this documentation is currently Japanese only.**
 
 ## How to Build
 
