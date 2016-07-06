@@ -1,0 +1,97 @@
+"売上明細"
+sales_detail = {
+
+    "売上日時"
+    sales_date_time : DATETIME;
+
+    "店舗コード"
+    store_code : TEXT;
+
+    "商品コード"
+    item_code : TEXT;
+
+    "数量"
+    amount : INT;
+
+    "販売単価"
+    unit_selling_price : INT;
+
+    "販売金額"
+    selling_price : INT;
+};
+
+"店舗マスタ"
+store_info = {
+
+    "店舗コード"
+    store_code : TEXT;
+
+    "店舗名称"
+    store_name : TEXT;
+};
+
+"商品マスタ"
+item_info = {
+
+    "商品コード"
+    item_code : TEXT;
+
+    "商品名"
+    item_name : TEXT;
+
+    "商品部門コード"
+    department_code : TEXT;
+
+    "商品部門名"
+    department_name : TEXT;
+
+    "商品カテゴリコード"
+    category_code : TEXT;
+
+    "商品カテゴリ名"
+    category_name : TEXT;
+
+    "商品単価"
+    unit_selling_price : INT;
+
+    "マスタ登録日"
+    registered_date : DATE;
+
+    "マスタ適用開始日"
+    begin_date : DATE;
+
+    "マスタ適用終了日"
+    end_date : DATE;
+};
+
+"カテゴリ別売上集計"
+category_summary = {
+
+    "カテゴリコード"
+    category_code : TEXT;
+
+    "販売数量"
+    amount_total : LONG;
+
+    "売上合計"
+    selling_price_total : LONG;
+};
+
+"エラー情報"
+error_record = {
+
+    "ファイル名"
+    file_name : TEXT;
+
+    "売上日時"
+    sales_date_time : DATETIME;
+
+    "店舗コード"
+    store_code : TEXT;
+
+    "商品コード"
+    item_code : TEXT;
+
+    "エラーメッセージ"
+    message : TEXT;
+};
