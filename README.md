@@ -23,7 +23,7 @@ cd docs/ja
 make html
 ```
 
-Then, open your browser to ``_build/html/index.html``.
+Then, open your browser to ``build/html/index.html``.
 
 ## Patch contribution
 * Please contribute with patches according to our [contribution guide (Japanese only, English version to be added)](http://docs.asakusafw.com/latest/release/ja/html/contribution.html)
