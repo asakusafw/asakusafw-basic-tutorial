@@ -30,24 +30,24 @@ DMDLスクリプト ``models.dmdl`` に ``joined_sales_info`` というデータ
 
 結合モデルにはいくつかの記述方法がありますが、ここでは以下のような構造で作成しています。
 
-..  code-block:: none
+..  code-block:: dmdl
 
     joined <結合モデル名>
     = <対象データモデル1> -> {
-        <結合前プロパティ名> -> <結合後プロパティ名>
-        <結合前プロパティ名> -> <結合後プロパティ名>
+        <結合前プロパティ名> -> <結合後プロパティ名>;
+        <結合前プロパティ名> -> <結合後プロパティ名>;
         ...
     } % <結合キー1>
     + <対象データモデル2> -> {
-        <結合前プロパティ名> -> <結合後プロパティ名>
-        <結合前プロパティ名> -> <結合後プロパティ名>
+        <結合前プロパティ名> -> <結合後プロパティ名>;
+        <結合前プロパティ名> -> <結合後プロパティ名>;
         ...
     } % <結合キー2>;
 
 上から順番に見ていきます。結合モデルはデータモデル名の前に ``joined`` キーワードを指定します。
 
 ..  literalinclude:: dmdl-attachment/dmdl-2-finished-models.dmdl
-    :language: none
+    :language: dmdl
     :caption: models.dmdl
     :name: models.dmdl-2-2
     :lines: 67-68
@@ -146,7 +146,7 @@ DMDLスクリプト ``models.dmdl`` に ``joined_sales_info`` というデータ
 
 集計モデルは以下のような構造で定義します。
 
-..  code-block:: none
+..  code-block:: dmdl
 
     summarized <集計モデル名> = <対象データモデル> => {
         <集約関数> <集計対象のプロパティ名> -> <集計結果のプロパティ名>;
@@ -158,7 +158,7 @@ DMDLスクリプト ``models.dmdl`` に ``joined_sales_info`` というデータ
 データモデル名の定義に続けて、集計の対象となるデータモデルを指定します。
 
 ..  literalinclude:: dmdl-attachment/dmdl-2-finished-models.dmdl
-    :language: none
+    :language: dmdl
     :caption: models.dmdl
     :name: models.dmdl-2-7
     :lines: 90
