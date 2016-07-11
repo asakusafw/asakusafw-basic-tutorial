@@ -12,7 +12,7 @@
 このチュートリアルは独立して完結しており、他のドキュメントを参照する必要がないように構成されています。
 ただし、Asakusa Frameworkの全体像や基本的な概念については本チュートリアルでは触れていませんので、次のドキュメントを未読の方は目を通しておくことを推奨します。
 
-* :asakusafw:`[Asakusa Framework documentation] - Asakusa Framework外観 <introduction/overview.html>`
+* :asakusafw:`[Asakusa Framework documentation] - Asakusa Framework概観 <introduction/overview.html>`
 
 各チュートリアルページの最後には、そのチュートリアルの説明を補完する「関連ドキュメント」を挙げています。
 各機能の網羅的な説明や詳細を把握したい場合は、関連ドキュメントのページを確認してください。
