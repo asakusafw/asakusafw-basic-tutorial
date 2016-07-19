@@ -45,9 +45,9 @@ Asakusa Frameworkのバッチアプリケーションを実行するには、以
     * - ``JAVA_HOME``
       - JDKのインストールパス
     * - ``HADOOP_CMD``
-      - :program:`hadoop` コマンドのパス
+      - :program:`hadoop` コマンドのパス [#]_
     * - ``SPARK_CMD``
-      - :program:`spark-submit` コマンドのパス
+      - :program:`spark-submit` コマンドのパス [#]_
     * - ``ASAKUSA_HOME``
       - Asakusa Frameworkのインストールパス
 
@@ -67,6 +67,10 @@ Asakusa Frameworkのバッチアプリケーションを実行するには、以
 ..  code-block:: sh
 
     source ~/.bash_profile
+
+..  [#] 環境変数 ``HADOOP_CMD`` を指定しない場合、環境変数 ``PATH`` に :program:`hadoop` コマンドのパスが含まれていればこれを利用します。
+
+..  [#] 環境変数 ``SPARK_CMD`` を指定しない場合、環境変数 ``PATH`` に :program:`spark-submit` コマンドのパスが含まれていればこれを利用します。
 
 デプロイメントアーカイブの配置
 ==============================

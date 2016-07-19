@@ -36,13 +36,17 @@ Shafuを導入したEclipse環境では、Eclipseのコンテキストメニュ�
 コマンドライン上からインストールする場合、Gradleの :program:`installAsakusafw` タスクを実行します。
 
 プロジェクト上でタスクを実行するには、ターミナル上でプロジェクトのディレクトリに移動して、
-以下のように :program:`gradlew` コマンド (Windows環境の場合は :program:`gradlew.bat` コマンド) をタスク名を指定して実行します。
-
-プロジェクト上でタスクを実行するには、以下のように :program:`gradlew` コマンドにタスク名を指定して実行します。
+以下のように :program:`gradlew` コマンド (Windows環境の場合は :program:`gradlew.bat` コマンド) にタスク名を指定して実行します。
 
 ..  code-block:: sh
+    :caption: Unix系OS(LinuxやMacOSXなど)環境での実行例
 
     ./gradlew installAsakusafw
+
+..  code-block:: sh
+    :caption: Windows環境での実行例
+
+    gradlew.bat installAsakusafw
 
 正常に終了すると、以下のように ``BUILD SUCCESSFUL`` と出力されます。
 
@@ -54,6 +58,10 @@ Shafuを導入したEclipse環境では、Eclipseのコンテキストメニュ�
     BUILD SUCCESSFUL
 
     Total time: 12.358 secs
+
+..  note::
+    以降のチュートリアルでは、Gradleを使ったコマンドラインの実行例はUnix系OSの例のみを記載します。
+    Windowsを利用している場合は、チュートリアルの説明を適宜読みかえて進めてください。
 
 トラブルシューティング
 ======================
