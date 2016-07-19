@@ -27,7 +27,7 @@
 * UnixシェルやWindowsコマンドなど、利用するOSのコマンドラインインターフェースについて基本的な知識を持っている
 
 このチュートリアルの後半では `Apache Spark`_ 環境上でバッチアプリケーションを実行する手順を説明しています。
-`Apache Spark`_ や関連する `Apache Hadoop`_ については本チュートリアルでは解説しませんので、
+Spark や関連する `Apache Hadoop`_ については本チュートリアルでは解説しませんので、
 この部分についてはSparkやHadoopの基本的な知識があることを前提としています。
 
 ..  _`Apache Spark`: http://spark.apache.org/
@@ -37,10 +37,8 @@
 ========================
 
 このチュートリアルで扱うサンプルアプリケーションはGitHubで公開しているサンプルアプリケーションプロジェクト
-`example-directio-csv <https://github.com/asakusafw/asakusafw-examples/tree/0.8.0/example-directio-csv>`_ をベースにしています。
+`example-basic-spark <https://github.com/asakusafw/asakusafw-examples/tree/0.8.1/example-basic-spark>`_ をベースにしています。
 完成したソースコードやプロジェクト構成を確認したい場合はこちらも参考にしてください。
-
-..  todo:: 0.8.1ベースにする際には ``example-basic-spark`` に変更してリンクURLも変更
 
 ドキュメントについて
 ====================
