@@ -39,6 +39,7 @@ Asakusa Framework チュートリアル
    assemble
    deploy-on-spark
    run-on-spark
+   conclusion
    exercise
 
 .. todolist::
