@@ -20,9 +20,7 @@ Asakusa Frameworkを使ったアプリケーション開発の流れを、下図
 システムの要求仕様などからアプリケーションの設計を行います。
 
 アプリケーションの設計についてはこのチュートリアルでは扱いませんが、
-チュートリアル向けに簡略化したアプリケーションの設計資料を次のチュートリアルで説明します。
-
-* :doc:`example-app`
+チュートリアル向けに簡略化したアプリケーションの設計資料を [3. :doc:`example-app`] で説明します。
 
 ..  seealso::
     :asakusafw:`[Asakusa Framework documentation] - 開発の流れ <introduction/next-step.html>` では設計で検討すべき項目の概要を説明しています。
@@ -36,82 +34,63 @@ Asakusa Frameworkを使ったバッチアプリケーションの実装の流れ
 開発環境の準備
 --------------
 
-まずバッチアプリケーションの開発環境を準備します。基本的には通常のJava開発環境と同じような環境を利用することができます。
+まずバッチアプリケーションの開発環境を準備 [4. :doc:`development-environment`] します。
+基本的には通常のJava開発環境と同じような環境を利用することができます。
+このチュートリアルではEclipse環境を利用 [5. :doc:`eclipse-shafu`] します。
 
-開発環境を準備したらバッチアプリケーションのソースコード一式を作成・管理するためのプロジェクトを作成します。
-また、バッチアプリケーションのテストを実行するために、Asakusa Frameworkの実行環境をインストールします。
-
-* :doc:`development-environment`
-* :doc:`eclipse-shafu`
-* :doc:`create-project`
-* :doc:`install-asakusafw`
+開発環境を準備したらバッチアプリケーションのソースコード一式を作成・管理するためのプロジェクトを作成 [6. :doc:`create-project`] します。
+また、バッチアプリケーションのテストを実行するために、Asakusa Frameworkの実行環境をインストール [7. :doc:`install-asakusafw`] します。
 
 データモデル定義DSLの記述
 -------------------------
 
-データモデル定義に基づいて、Asakusa Frameworkが提供するデータモデル記述言語(DMDL)を記述します。
-また、記述したDMDLからデータモデルクラスを生成します。
+データモデル定義に基づいて、Asakusa Frameworkが提供するデータモデル記述言語(DMDL)を記述 [8. :doc:`dmdl-1`] してアプリケーションで利用するデータモデルを定義します。
+DMDLには結合や集計といった処理を定義 [9. :doc:`dmdl-2`] したり、外部入出力のファイルフォーマット情報を定義 [10. :doc:`dmdl-3`] することもできます。
 
-作成したデータモデルクラスは、後述するAsakusa DSLで処理の入力、及び出力対象のオブジェクトとして利用します。
-
-* :doc:`dmdl-1`
-* :doc:`dmdl-2`
-* :doc:`dmdl-3`
-* :doc:`dmdl-4`
+記述したDMDLからデータモデルクラスを生成 [11. :doc:`dmdl-4`] することができます。
+データモデルクラスは、後述するAsakusa DSLで処理の入力、及び出力対象のオブジェクトとして利用します。
 
 Asakusa DSLの記述
 -----------------
 
 Asakusa Frameworkでアプリケーションを作成するには、 Asakusa DSLで処理の内容やデータフロー、データの入出力方式を定義します。
 
-Asakusa DSLでは、データフローの最小単位で、主にデータの加工を行う演算子（Operator DSL）の記述、
-演算子を組み合わせてデータフローの構造を記述し、外部システムとの入出力データ定義を行うジョブフロー/フロー部品（Flow DSL）、
-バッチの構造の記述（Batch DSL）をそれぞれ行います。
+Asakusa DSLは、以下のような構造を持っています。
+
+* Operator DSL : データフローの最小単位で、主にデータの加工を行う演算子（Operator DSL）を記述する [12. :doc:`dsl-operator-1`] [13. :doc:`dsl-operator-2`]
+* Flow DSL : 演算子を組み合わせたデータフローの構造を記述する。Flow DSLには以下の2種類がある:
+
+  * 再利用可能なデータフローを記述するためのフロー部品 [15. :doc:`dsl-flowpart-1`] [16. :doc:`dsl-flowpart-2`]
+  * 外部システムとの入出力データ定義を行うジョブフロー [18. :doc:`dsl-jobflow`]
+* Batch DSL : 最上位のワークフロー構造を定義するバッチを記述する [20. :doc:`dsl-batch`]
 
 ..  figure:: images/asakusa-dsl.png
-
-* :doc:`dsl-operator-1`
-* :doc:`dsl-operator-2`
-* :doc:`dsl-flowpart-1`
-* :doc:`dsl-flowpart-2`
-* :doc:`dsl-jobflow`
-* :doc:`dsl-batch`
 
 アプリケーションのテスト
 ------------------------
 
 Asakusa Frameworkは、Asakusa DSLの単位でテストを行うための仕組みが提供されています。
 
-Operator DSLついては、通常のJavaのクラスと同様にテストを行うことが出来ます。
-Flow DSLおよびBatch DSLについては、DSLをHadoopや外部システム連携モジュール上で実行可能な形式にコンパイルし、テストツールと連携してテストを行うテストドライバーと呼ばれるテスト部品を使用してテストを行います。
+Operator DSLついては、通常のJavaのクラスと同様にテストを行うことが出来ます [14. :doc:`testing-operator`] 。
+Flow DSLおよびBatch DSLについては、データフローを実行可能な形式にコンパイルし、テストツールと連携してテストを行うテストドライバーと呼ばれるテスト部品を使用してテストを行います
+[17. :doc:`testing-flowpart`] [19. :doc:`testing-jobflow`] [21. :doc:`testing-batch`] 。
 
 テストドライバーを利用したテストはテストセットとして、JUnitなどのテストハーネス上でテストドライバーAPIを使用したテストクラス、およびテストの入力データ、テスト結果の期待値、及びテスト検証のルールを定義したテストデータを作成します。
 テストドライバーAPIでは、テストデータをExcelやJSONファイルとして作成するための仕組みが提供されています。
 
-* :doc:`testing-operator`
-* :doc:`testing-flowpart`
-* :doc:`testing-jobflow`
-* :doc:`testing-batch`
-
 アプリケーションのビルド
 ------------------------
 
-Asakusa DSLで作成したアプリケーションのソースコードから、Asakusa DSLコンパイラによって各プラットフォームで実行可能なアプリケーションを生成します。
+Asakusa DSLで作成したアプリケーションのソースコードから、Asakusa DSLコンパイラによって各プラットフォームで実行可能なアプリケーションを生成 [22. :doc:`compile-batchapp`] します。
 
 アプリケーションの実行環境にデプロイするにはアプリケーションの実行バイナリのほか、ランタイムライブラリや設定ファイルなども必要です。
-Asakusa Frameworkが提供するビルドシステム(Gradle Plugin)は、これらをパッケージングする仕組みを提供しています。
-
-* :doc:`compile-batchapp`
-* :doc:`assemble`
+Asakusa Frameworkが提供するビルドシステム(Gradle Plugin)は、これらをパッケージングする仕組み [23. :doc:`assemble`] を提供しています。
 
 アプリケーションのデプロイと実行
 --------------------------------
 
-開発したバッチアプリケーションをSpark環境などの運用環境で実行する準備を行います。
-準備が整ったら、バッチアプリケーションを実行してみましょう。
-
-* :doc:`deploy-on-spark`
-* :doc:`run-on-spark`
+開発したバッチアプリケーションをSpark環境などの運用環境で実行する準備 [24. :doc:`deploy-on-spark`] を行います。
+準備が整ったら、バッチアプリケーションを実行 [25. :doc:`run-on-spark`] してみましょう。
 
 関連ドキュメント
 ================

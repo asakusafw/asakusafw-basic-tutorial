@@ -16,10 +16,14 @@
 
 結合モデルを作成しておくことで、データフロー内で結合に関する処理を実装することなく、結合結果のデータモデルを取得することができるようになります。
 
+このチュートリアルでは、:doc:`example-app` で紹介した :ref:`example-app-data-schema-sales_detail` と :ref:`example-app-data-schema-item_info` を結合した結合モデルを作成していきます。
+
+下図は、これから作成する結合モデルがデータフローのどこで使用されているかを示しています。
+
+..  figure:: images/example-app-dataflow-dmdl-2-1.png
+
 結合モデルの定義
 ----------------
-
-このチュートリアルでは、:doc:`example-app` で紹介した :ref:`example-app-data-schema-sales_detail` と :ref:`example-app-data-schema-item_info` を結合した結合モデルを作成していきます。
 
 DMDLスクリプト ``models.dmdl`` に ``joined_sales_info`` というデータモデル名で結合モデルを追加します。
 ``models.dmdl`` 内に追加する場所はどこでもかまいません。
@@ -53,16 +57,18 @@ DMDLスクリプト ``models.dmdl`` に ``joined_sales_info`` というデータ
     :language: dmdl
     :caption: models.dmdl
     :name: models.dmdl-2-2
-    :lines: 67-68
+    :lines: 67-87
+    :emphasize-lines: 2
 
 データモデル名の定義に続けて、結合の対象となるデータモデルに関する情報を定義します。
 まず、売上明細部分の定義を見ていきます。
 
 ..  literalinclude:: dmdl-attachment/dmdl-2-finished-models.dmdl
-    :language: none
+    :language: dmdl
     :caption: models.dmdl
     :name: models.dmdl-2-3
-    :lines: 69-79
+    :lines: 67-87
+    :emphasize-lines: 3-13
 
 対象データモデル名に続けて、``{...}`` で囲われたブロック内でプロパティのマッピング情報を記述します。
 
@@ -82,10 +88,10 @@ DMDLスクリプト ``models.dmdl`` に ``joined_sales_info`` というデータ
 続けて商品マスタ側の定義を見てみます。
 
 ..  literalinclude:: dmdl-attachment/dmdl-2-finished-models.dmdl
-    :language: none
+    :language: dmdl
     :caption: models.dmdl
-    :name: models.dmdl-2-4
-    :lines: 80-87
+    :lines: 67-87
+    :emphasize-lines: 14-21
 
 キーワード ``+`` に続けて ``sales_detail`` と同様に結合対象となるデータモデル名、プロパティのマッピング情報、結合キーを指定しています。
 
@@ -125,13 +131,17 @@ DMDLスクリプト ``models.dmdl`` に ``joined_sales_info`` というデータ
 
 集計モデルを作成しておくことで、データフロー内で集計に関する処理を実装することなく、集計結果のデータモデルを取得することができるようになります。
 
-集計モデルの定義
-----------------
-
 このチュートリアルでは、`結合モデルを作成する`_ で作成した :ref:`example-app-data-schema-joined_sales_info` に対して集計を行い、
 :ref:`example-app-data-schema-category_summary` を生成する集計モデルを作成していきます。
 
-一つ前のチュートリアル :doc:`dmdl-1` では :ref:`example-app-data-schema-category_summary` はレコードモデルとして定義しました。
+下図は、これから作成する結合モデルがデータフローのどこで使用されているかを示しています。
+
+..  figure:: images/example-app-dataflow-dmdl-2-2.png
+
+集計モデルの定義
+----------------
+
+前のチュートリアル :doc:`dmdl-1` では :ref:`example-app-data-schema-category_summary` はレコードモデルとして定義しました。
 
 ..  literalinclude:: dmdl-attachment/dmdl-1-finished-models.dmdl
     :language: dmdl
@@ -139,7 +149,7 @@ DMDLスクリプト ``models.dmdl`` に ``joined_sales_info`` というデータ
     :name: models.dmdl-2-5
     :lines: 67-78
 
-このデータモデルを、以下のように集計モデルに変更します。
+このデータモデルを、以下のように集計モデルによるデータモデル定義に変更します。
 
 ..  literalinclude:: dmdl-attachment/dmdl-2-finished-models.dmdl
     :language: dmdl
@@ -164,7 +174,8 @@ DMDLスクリプト ``models.dmdl`` に ``joined_sales_info`` というデータ
     :language: dmdl
     :caption: models.dmdl
     :name: models.dmdl-2-7
-    :lines: 90
+    :lines: 89-100
+    :emphasize-lines: 2
 
 データモデル名に続けて ``{...}`` で囲われたブロック内では、対象データモデルに対する集計方法を記述します。
 
@@ -172,10 +183,11 @@ DMDLスクリプト ``models.dmdl`` に ``joined_sales_info`` というデータ
 行頭で指定する「集計関数」（ここの例では ``any`` や ``sum`` ）に従って集計されます。
 
 ..  literalinclude:: dmdl-attachment/dmdl-2-finished-models.dmdl
-    :language: none
+    :language: dmdl
     :caption: models.dmdl
     :name: models.dmdl-2-8
-    :lines: 92-99
+    :lines: 89-100
+    :emphasize-lines: 4-11
 
 ``sum amount -> amount_total;`` となっている行を例に説明すると、
 
@@ -200,7 +212,8 @@ DMDLスクリプト ``models.dmdl`` に ``joined_sales_info`` というデータ
     :language: none
     :caption: models.dmdl
     :name: models.dmdl-2-9
-    :lines: 100
+    :lines: 89-100
+    :emphasize-lines: 12
 
 終わりに
 ========

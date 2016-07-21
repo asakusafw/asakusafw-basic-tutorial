@@ -13,7 +13,21 @@ DMDL(Data Model Definition Language)はAsakusa Frameworkで利用可能なデー
 
 DMDLから生成されるJavaプログラムは、バッチアプリケーションを構成する各プログラムの入出力データを保持したり、外部ファイルやデータベースとの連携を行う際のフォーマットを管理したりと、様々な用途に利用します。
 
-このチュートリアルでは、前項の :doc:`example-app` で説明した :ref:`example-app-data-schema` の定義に従ってデータモデルを作成していきます。
+このチュートリアルでは、前項の :doc:`example-app` で説明した :ref:`example-app-data-schema` の定義に従って、以下のデータモデルを作成していきます。
+
+1. :ref:`example-app-data-schema-sales_detail`
+2. :ref:`example-app-data-schema-store_info`
+3. :ref:`example-app-data-schema-item_info`
+4. :ref:`example-app-data-schema-category_summary`
+5. :ref:`example-app-data-schema-error_record`
+
+下図は、これらのデータモデルがデータフローのどこで使用されているかを示しています。
+
+..  figure:: images/example-app-dataflow-dmdl-1.png
+
+この図で示す通り、データモデルはバッチアプリケーションの入力データや出力データを保持したり、データフロー内の中間データを保持するために利用します。
+
+なお、この図に対応がないデータモデルは後のチュートリアルで説明します。
 
 DMDLスクリプトを作成する
 ========================
