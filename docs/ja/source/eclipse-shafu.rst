@@ -96,9 +96,7 @@ Shafuの設定
 
 1. Eclipse設定画面から :guilabel:`Jinrikisha  (人力車)` を選択します。
 
-..  figure:: images/preferences-jinrikisha.png
-
-2. :guilabel:`基本` タブの :guilabel:`環境` - :guilabel:`Gradleのバージョン` を ``2.13`` と入力し、画面右下の :guilabel:`Apply` ボタンを押下します。
+2. :guilabel:`基本` タブの :guilabel:`環境` - :guilabel:`Gradleのバージョン` を ``2.14.1`` と入力し、画面右下の :guilabel:`Apply` ボタンを押下します。
 
 ..  figure:: images/change-shafu-gradle.png
 
@@ -106,9 +104,9 @@ Shafuの設定
 
 ..  figure:: images/preferences-asakusa-home.png
 
-4. :guilabel:`フレームワークのインストール先 (ASAKUSA_HOME)` の値に、環境変数 ``ASAKUSA_HOME`` の値が設定されていることを確認します。
+4. :guilabel:`フレームワークのインストール先 (ASAKUSA_HOME)` の値に、環境変数 ``ASAKUSA_HOME`` の値が表示されていることを確認します。
 
-   この値が空欄の場合、環境変数 ``ASAKUSA_HOME`` がEclipseに反映されていないため、環境変数を正しく設定してEclipseを再起動してください。
+   この値が空欄になっている場合、環境変数 ``ASAKUSA_HOME`` がEclipseの実行プロセスに反映されていないため、環境変数を正しく設定してEclipseを再起動してください。
 
 関連ドキュメント
 ================
