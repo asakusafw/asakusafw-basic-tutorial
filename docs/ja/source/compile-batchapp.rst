@@ -30,7 +30,7 @@ Batch DSLコンパイラは各実行プラットフォーム向けにそれぞ�
 
 プロジェクトに対してどのBatch DSLコンパイラを利用するかは、プロジェクトのビルド設定で指定します。
 
-このチュートリアルの手順でプロジェクトを作成した状態では **MapReduce DSLコンパイラ** および **Spark DSLコンパイラ** の2つが利用可能になっています。
+このチュートリアルの手順でプロジェクトを作成した状態では **Spark DSLコンパイラ** が利用可能になっています。
 
 バッチアプリケーションをコンパイルする
 ======================================
@@ -64,10 +64,9 @@ Shafuを導入したEclipse環境では、Batch DSLコンパイラをコンテ�
 ..  code-block:: none
 
     ...
-    INFO  バッチクラスをコンパイルします: com.example.batch.SummarizeBatch
-    ERROR CategorySummaryOperator#summarizeByCategory(@Summarize)の出力outが他の演算子への入力、もしくはジョブフローの出力に接続されていません (at com.example.flowpart.CategorySummaryFlowPart)
-    ERROR N/A{name=categorySummary}の入力portが他の演算子からの出力、もしくはジョブフローの入力に接続されていません (at com.example.flowpart.CategorySummaryFlowPart)
-    ERROR コンパイルはエラーにより中断しました (com.example.batch.SummarizeBatch)
+    INFO  compiling batch class: com.example.batch.SummarizeBatch
+    ERROR output port "out" of "CategorySummaryOperator#summarizeByCategory(@Summarize)" is not connected to the other input port nor jobflow output (com.example.flowpart.CategorySummaryFlowPart)
+    ERROR input port "port" of "N/A{name=categorySummary}" is not connected from the other output port nor jobflow input (com.example.flowpart.CategorySummaryFlowPart)
     ...
 
 エラーメッセージにはコンパイルが失敗した原因と、該当のクラスが表示されます。
@@ -92,13 +91,12 @@ Batch DSLコンパイラが生成したバッチアプリケーションは、�
 
     * - Asakusa DSLコンパイラ
       - 出力ディレクトリ
-    * - MapReduce DSLコンパイラ
-      - :file:`build/batch/<batch-id>`
     * - Spark DSLコンパイラ
       - :file:`build/spark-batchapps/spark.<batch-id>`
     * - M\ :sup:`3`\ BP DSLコンパイラ
       - :file:`build/m3bp-batchapps/m3bp.<batch-id>`
-
+    * - MapReduce DSLコンパイラ
+      - :file:`build/batchc/<batch-id>`
 
 関連ドキュメント
 ================
@@ -111,8 +109,8 @@ Batch DSLコンパイラが生成したバッチアプリケーションは、�
 
 Asakusa DSLコンパイラの各リファレンスドキュメントには、コンパイラオプションなどの詳細な情報が記載されています。
 
-* :asakusafw:`[Asakusa Framework documentation] - Asakusa DSL Compiler for MapReduce リファレンス <dsl/mapreduce-compiler.html>`
-* :asakusa-on-spark:`[Asakusa on Spark documentation] - Asakusa on Spark リファレンス <reference.html>`
-* :asakusa-on-m3bp:`[Asakusa on M3BP documentation] - Asakusa on M3BP リファレンス <reference.html>`
+* :asakusafw:`[Asakusa Framework documentation] - Asakusa on Spark リファレンス <spark/reference.html>`
+* :asakusafw:`[Asakusa Framework documentation] - Asakusa on M3BP リファレンス <m3bp/reference.html>`
+* :asakusafw:`[Asakusa Framework documentation] - Asakusa on MapReduce リファレンス <mapreduce/reference.html>`
 
 

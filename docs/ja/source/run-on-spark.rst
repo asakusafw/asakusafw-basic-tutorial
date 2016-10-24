@@ -17,12 +17,6 @@ YAESSはそのようなバッチアプリケーションに対して統一され
 YAESSの代表的なコマンドは :program:`$ASAKUSA_HOME/yaess/bin/yaess-batch.sh` です。
 このコマンドに実行したいバッチのバッチIDとバッチ引数などのオプションを指定して実行することで、バッチアプリケーションが実行されます。
 
-..  code-block:: sh
-
-    $ASAKUSA_HOME/yaess/bin/yaess-batch.sh <バッチID> [-A <バッチ引数>]
-
-標準の構成では、バッチIDをそのまま指定して実行すると、Hadoop MapReduce環境向けのバッチアプリケーションが実行されます。
-
 Spark環境向けにコンパイルされたバッチアプリケーションを実行するにはバッチIDの前にプレフィックス ``spark.`` を指定します。
 
 ..  code-block:: sh
@@ -126,7 +120,6 @@ Direct I/Oを使ったバッチアプリケーションの入出力ファイル�
 HadoopやSparkが提供する次のような管理機能を利用することができます。
 
 * Hadoop Resource Manager WebUI
-* Hadoop History Server WebUI
 * Hadoop :program:`yarn` コマンド
 * Spark History Server WebUI
 
@@ -137,6 +130,4 @@ HadoopやSparkが提供する次のような管理機能を利用することが
 
 * :asakusafw:`[Asakusa Framework documentation] - Asakusa Framework デプロイメントガイド <administration/deployment-guide.html>`
 * :asakusafw:`[Asakusa Framework documentation] - YAESSユーザーガイド <yaess/user-guide.html>`
-* :asakusa-on-spark:`[Asakusa on Spark documentation] - Asakusa on Spark ユーザガイド <user-guide.html>`
-
-
+* :asakusafw:`[Asakusa Framework documentation] - Asakusa on Spark ユーザガイド <spark/user-guide.html>`
