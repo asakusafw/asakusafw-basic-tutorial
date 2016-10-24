@@ -10,10 +10,7 @@ Spark環境へのデプロイ
 SparkとHadoop環境
 -----------------
 
-以降の説明では、Asakusa Frameworkの実行環境となるSpark環境が準備済みであることを前提とします。
-
-現時点のAsakusa Frameworkでは、Sparkを利用する上でもDirect I/Oを利用したバッチアプリケーションの出力処理において、Hadoop MapReduceの機能を利用します。
-このため、Spark環境と合わせてHadoop MapReduceが実行可能な環境を用意する必要があります。
+以降の説明では、Asakusa Frameworkの実行環境となるSpark環境、及びHadoop環境が準備済みであることを前提とします。
 
 Sparkのセットアップについては、Sparkのドキュメントや利用するHadoopディストリビューションのドキュメント等を参考にして下さい。
 またAsakusa Frameworkが動作検証を行っている各プラットフォームのバージョン詳細などは `関連ドキュメント`_ を参照してください。
@@ -171,5 +168,5 @@ Direct I/Oのデフォルト設定では、入力ディレクトリはHadoopフ�
 
 * :asakusafw:`[Asakusa Framework documentation] - 対応プラットフォーム <product/target-platform.html>`
 * :asakusafw:`[Asakusa Framework documentation] - Asakusa Framework デプロイメントガイド <administration/deployment-guide.html>`
-* :asakusa-on-spark:`[Asakusa on Spark documentation] - Asakusa on Spark ユーザガイド <user-guide.html>`
+* :asakusafw:`[Asakusa Framework documentation] - Asakusa on Spark ユーザガイド <spark/user-guide.html>`
 

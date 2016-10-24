@@ -20,7 +20,7 @@
       - Windows, MacOSX, Linux
       -
     * - `JDK <http://www.oracle.com/technetwork/java/javase/downloads/index.html>`_
-      - JDK 7 または JDK 8
+      - JDK 8
       - JREは利用不可 [#]_
     * - `Eclipse <http://www.eclipse.org/downloads/>`_
       - バージョン 4.4.2 以上
