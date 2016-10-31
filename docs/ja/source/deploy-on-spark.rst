@@ -41,8 +41,6 @@ Asakusa Frameworkのバッチアプリケーションを実行するには、以
       - 説明
     * - ``JAVA_HOME``
       - JDKのインストールパス
-    * - ``HADOOP_CMD``
-      - :program:`hadoop` コマンドのパス [#]_
     * - ``SPARK_CMD``
       - :program:`spark-submit` コマンドのパス [#]_
     * - ``ASAKUSA_HOME``
@@ -55,7 +53,6 @@ Asakusa Frameworkのバッチアプリケーションを実行するには、以
     :name: .bash_profile
 
     export JAVA_HOME=/usr/lib/jvm/java-8-oracle
-    export HADOOP_CMD=/usr/lib/hadoop/bin/hadoop
     export SPARK_CMD=/opt/spark/bin/spark-submit
     export ASAKUSA_HOME=$HOME/asakusa
 
@@ -64,8 +61,6 @@ Asakusa Frameworkのバッチアプリケーションを実行するには、以
 ..  code-block:: sh
 
     source ~/.bash_profile
-
-..  [#] 環境変数 ``HADOOP_CMD`` を指定しない場合、環境変数 ``PATH`` に :program:`hadoop` コマンドのパスが含まれていればこれを利用します。
 
 ..  [#] 環境変数 ``SPARK_CMD`` を指定しない場合、環境変数 ``PATH`` に :program:`spark-submit` コマンドのパスが含まれていればこれを利用します。
 
