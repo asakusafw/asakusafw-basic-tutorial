@@ -641,6 +641,25 @@ Windows環境で `テストを実行する`_ の手順を実行すると、以�
 現時点でのAsakusa Frameworkの制限事項で、Windows上でテストドライバーを実行するとこのメッセージが出力されることがあります。
 テスト自体の動作には影響ありません。
 
+ExitCodeException exitCode=-1073741515
+--------------------------------------
+
+Windows環境で `テストを実行する`_ の手順を実行すると、以下のエラーメッセージが表示されテストが失敗する。
+
+..  code-block:: none
+
+    java.lang.IllegalStateException: ExitCodeException exitCode=-1073741515:
+        ...
+        Caused by:
+        ExitCodeException exitCode=-1073741515:
+            at org.apache.hadoop.util.Shell.runCommand(Shell.java:582)
+        ...
+
+想定される原因
+~~~~~~~~~~~~~~
+
+環境変数 ``PATH`` にJDKのコマンドパスが正しく設定されていない可能性があります。
+
 関連ドキュメント
 ================
 
