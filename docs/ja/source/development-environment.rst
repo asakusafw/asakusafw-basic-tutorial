@@ -51,11 +51,21 @@ Asakusa Frameworkを利用する開発環境には、以下の環境変数を設
     :header-rows: 1
 
     * - 変数名
-      - 説明
+      - 値
     * - ``ASAKUSA_HOME``
-      - Asakusa Frameworkのインストールディレクトリ
+      - Asakusa Frameworkのインストールディレクトリを指定
+    * - ``JAVA_HOME``
+      - JDKのインストールディレクトリを指定
+    * - ``PATH``
+      - JDKのコマンドパスを追加
 
 環境変数 ``ASAKUSA_HOME`` はAsakusa Framework実行環境のインストール先ディレクトリを絶対パスで指定します。
+
+環境変数 ``JAVA_HOME`` にはJDKのインストール先ディレクトリを絶対パスで指定します。
+Asakusa Frameworkのいくつかの機能はJDKの機能を利用するため、JREではなくJDKのパスを設定してください。
+
+環境変数 ``PATH`` にはJDKのコマンドパスを指定します。
+通常、Unix系OSの場合は ``${JAVA_HOME}/bin`` ､ Windows系OSの場合は ``%JAVA_HOME%¥bin`` のように指定します。
 
 以降の手順では、コマンドライン環境やIDE環境上で上記の環境変数が有効になっている必要があるため、
 環境変数を設定したら、必要に応じてデスクトップ環境に対してログインセッションの再起動などを実施してください。
