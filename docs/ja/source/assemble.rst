@@ -107,27 +107,6 @@ Shafuを導入したEclipse環境では、デプロイメントアーカイブ�
 
 ここでは、標準で定義されているプロファイル ``prod`` に対する定義を変更していきます。
 
-アーカイブファイル名の変更
---------------------------
-
-`デプロイメントアーカイブを生成する`_ の手順で生成されるアーカイブファイル名は任意の名前に変更することができます。
-
-アーカイブファイル名を変更するにはプロファイルのブロック内（ここでは ``profiles.prod`` ブロック）に ``archiveName <アーカイブファイル名>`` を追加します。
-
-..  code-block:: groovy
-    :caption: build.gradle
-    :name: build.gradle-3
-    :emphasize-lines: 4
-
-    asakusafwOrganizer {
-        profiles.prod {
-            archiveName "${project.name}.tar.gz"
-        }
-    }
-
-``${project.name}`` は、標準では ``build.gradle`` が含まれるディレクトリ名になります。
-このチュートリアルの場合は ``asakusa-tutorial.tar.gz`` というファイルが生成されるようになります。
-
 デプロイメント構成に対するファイルの追加
 ----------------------------------------
 
@@ -143,7 +122,6 @@ Shafuを導入したEclipse環境では、デプロイメントアーカイブ�
 
     asakusafwOrganizer {
         profiles.prod {
-            archiveName "${project.name}.tar.gz"
             assembly.into('example-dataset') {
                 put 'src/test/example-dataset'
             }
@@ -168,7 +146,7 @@ Shafuを導入したEclipse環境では、デプロイメントアーカイブ�
 --------------------------------
 
 これまでの手順を実施した上で `デプロイメントアーカイブを生成する`_ の手順を再度実行すると、
-アーカイブファイルがプロジェクトの ``build`` フォルダ配下にデプロイメントアーカイブが ``asakusa-tutorial.tar.gz`` というファイル名で生成され、
+アーカイブファイルがプロジェクトの ``build`` フォルダ配下にデプロイメントアーカイブが ``asakusafw-asakusa-tutorial.tar.gz`` というファイル名で生成され、
 このアーカイブファイルにはテストデータが同梱されています。
 
 このアーカイブファイルは次のチュートリアル :doc:`deploy-on-spark` で使用します。
