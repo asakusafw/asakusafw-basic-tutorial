@@ -69,7 +69,7 @@ Asakusa Frameworkのバッチアプリケーションを実行するには、以
 
 Asakusa Framework実行環境をデプロイするマシンに :doc:`assemble` で作成した開発環境上のデプロイメントアーカイブファイルを配置します。
 
-ここでは ``$HOME/archive`` というディレクトリにデプロイメントアーカイブファイル ``asakusa-tutorial.tar.gz`` を配置したものとします。
+ここでは ``$HOME/archive`` というディレクトリにデプロイメントアーカイブファイル ``asakusafw-asakusa-tutorial.tar.gz`` を配置したものとします。
 
 デプロイメントアーカイブの展開
 ==============================
@@ -81,7 +81,7 @@ Asakusa Framework実行環境をデプロイするマシンに :doc:`assemble` �
 
     mkdir -p "$ASAKUSA_HOME"
     cd "$ASAKUSA_HOME"
-    tar -xf $HOME/archive/asakusa-tutorial.tar.gz
+    tar -xf $HOME/archive/asakusafw-asakusa-tutorial.tar.gz
     find "$ASAKUSA_HOME" -name "*.sh" | xargs chmod u+x
 
 デプロイが正常に実行された場合、 ``ASAKUSA_HOME`` 配下には以下のようなディレクトリが作成されています。
