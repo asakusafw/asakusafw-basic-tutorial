@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # asakusafw-tutorial documentation build configuration file, created by
-# sphinx-quickstart on Mon May 16 11:34:09 2016.
+# sphinx-quickstart on Mon May 16 11:34:09 2017.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -64,7 +64,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Asakusa Framework Tutorial'
-copyright = u'2016, Asakusa Framework Team'
+copyright = u'2017, Asakusa Framework Team'
 author = u'Asakusa Framework Team'
 
 # The version info for the project you're documenting, acts as replacement for
