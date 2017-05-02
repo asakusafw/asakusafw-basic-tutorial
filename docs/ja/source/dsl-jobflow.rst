@@ -684,8 +684,8 @@ Direct I/Oの設定に基づいてベースパスからファイルシステム�
 ..  literalinclude:: dsl-attachment/ErrorRecordToCsv.java
     :language: java
     :linenos:
-    :caption: ErroRecordToCsv.java
-    :name: ErroRecordToCsv.java-all
+    :caption: ErrorRecordToCsv.java
+    :name: ErrorRecordToCsv.java-all
 
 ジョブフロークラス
 ------------------
