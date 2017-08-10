@@ -32,7 +32,7 @@ Shafuを導入したEclipse環境では、ウィザードに従ってプロジ�
 ..  figure:: images/create-project-from-catalog.png
 
 4. プロジェクトテンプレート ダイアログにオンラインに公開されている、利用可能なプロジェクトテンプレートの一覧が表示されます。
-   ここでは、 :guilabel:`Asakusa Project Template <Spark> - 0.9.0` を選択して、 :guilabel:`OK` ボタンを押下します。
+   ここでは、 :guilabel:`Asakusa Project Template <Spark> - 0.10.0` を選択して、 :guilabel:`OK` ボタンを押下します。
 
 ..  figure:: images/create-project-select-template.png
 
@@ -53,7 +53,7 @@ Shafuを導入したEclipse環境では、ウィザードに従ってプロジ�
 
 Shafuを導入したEclipse以外の環境を利用する場合は、以下のURLに公開されているプロジェクトテンプレートをダウンロードして展開してください。
 
-* `asakusa-spark-template-0.9.0.tar.gz <http://www.asakusafw.com/download/gradle-plugin/asakusa-spark-template-0.9.0.tar.gz>`_
+* `asakusa-spark-template-0.10.0.tar.gz <http://www.asakusafw.com/download/gradle-plugin/asakusa-spark-template-0.10.0.tar.gz>`_
 
 IDEを利用する場合はこのプロジェクトをIDEにインポートしてください。
 
