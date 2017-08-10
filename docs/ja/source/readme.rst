@@ -37,7 +37,7 @@ Spark や関連する `Apache Hadoop`_ については本チュートリアル�
 ========================
 
 このチュートリアルで扱うサンプルアプリケーションはGitHubで公開しているサンプルアプリケーションプロジェクト
-`example-basic-spark <https://github.com/asakusafw/asakusafw-examples/tree/0.9.0/example-basic-spark>`_ をベースにしています。
+`example-basic-spark <https://github.com/asakusafw/asakusafw-examples/tree/0.10.0/example-basic-spark>`_ をベースにしています。
 完成したソースコードやプロジェクト構成を確認したい場合はこちらも参考にしてください。
 
 ドキュメントについて
