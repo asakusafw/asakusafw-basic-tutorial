@@ -82,7 +82,15 @@ Asakusa Framework実行環境をデプロイするマシンに :doc:`assemble` �
     mkdir -p "$ASAKUSA_HOME"
     cd "$ASAKUSA_HOME"
     tar -xf $HOME/archive/asakusafw-asakusa-tutorial.tar.gz
-    find "$ASAKUSA_HOME" -name "*.sh" | xargs chmod u+x
+    java -jar $ASAKUSA_HOME/tools/bin/setup.jar
+
+..  attention::
+    ``$ASAKUSA_HOME/tools/bin/setup.jar`` を実行する手順は Asakusa Framework バージョン 0.10.0 より追加されました。
+
+    バージョン 0.9以前では、この部分は ``find "$ASAKUSA_HOME" -name "*.sh" | xargs chmod u+x`` のようなコマンドを実行していましたが、
+    バージョン 0.10.0 から展開後のファイル拡張子が変更されたため、この手順では正しくセットアップすることができません。
+
+    そのためバージョン 0.10.0 以降は必ず上記のように ``$ASAKUSA_HOME/tools/bin/setup.jar`` を実行してセットアップを行ってください。
 
 デプロイが正常に実行された場合、 ``ASAKUSA_HOME`` 配下には以下のようなディレクトリが作成されています。
 
