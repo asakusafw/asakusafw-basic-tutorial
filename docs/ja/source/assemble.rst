@@ -118,7 +118,7 @@ Shafuを導入したEclipse環境では、デプロイメントアーカイブ�
 ..  code-block:: groovy
     :caption: build.gradle
     :name: build.gradle-4
-    :emphasize-lines: 4-6
+    :emphasize-lines: 3-5
 
     asakusafwOrganizer {
         profiles.prod {
