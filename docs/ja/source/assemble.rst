@@ -79,7 +79,7 @@ Shafuを導入したEclipse環境では、デプロイメントアーカイブ�
 ..  code-block:: groovy
     :caption: build.gradle
     :name: build.gradle-1
-    :emphasize-lines: 8-9
+    :emphasize-lines: 7-8
 
     ...
     apply plugin: 'asakusafw-sdk'
