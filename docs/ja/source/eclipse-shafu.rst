@@ -96,7 +96,7 @@ Shafuの設定
 
 1. Eclipse設定画面から :guilabel:`Jinrikisha  (人力車)` を選択します。
 
-2. :guilabel:`基本` タブの :guilabel:`環境` - :guilabel:`Gradleのバージョン` を ``3.1`` と入力し、画面右下の :guilabel:`Apply` ボタンを押下します。
+2. :guilabel:`基本` タブの :guilabel:`環境` - :guilabel:`Gradleのバージョン` を ``4.3.1`` と入力し、画面右下の :guilabel:`Apply` ボタンを押下します。
 
 ..  figure:: images/change-shafu-gradle.png
 
