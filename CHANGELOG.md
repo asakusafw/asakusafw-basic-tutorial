@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.10-revision-1 (2017-11-29)
+
+* Revised for Asakusa Framework version 0.10.0
+
 ## 0.9-revision-1 (2016-12-05)
 
 * Revised for Asakusa Framework version 0.9.0
