@@ -53,7 +53,7 @@ def make_link_role(base_url, prefix):
     return role
 
 def setup_link_roles(app):
-    for name, (base_url, prefix) in app.config.javadoclinks.iteritems():
+    for name, (base_url, prefix) in app.config.javadoclinks.items():
         app.add_role(name, make_link_role(base_url, prefix))
 
 def setup(app):
