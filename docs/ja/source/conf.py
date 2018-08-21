@@ -133,9 +133,9 @@ html_theme = "sphinx_rtd_theme"
 # documentation.
 #html_theme_options = {}
 
-html_context = {
-  'extra_css_files': ['_static/custom.css']
-}
+# html_context = {
+#  'extra_css_files': ['_static/custom.css']
+# }
 
 # Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
@@ -159,7 +159,7 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+# html_static_path = ['_static']
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
