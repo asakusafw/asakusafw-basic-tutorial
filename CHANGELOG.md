@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.10-revision-2 (2018-08-21)
+
+* Revised for Asakusa Framework version 0.10.1
+* Revised for Shafu version 0.7.0
+* Bumps up Sphinx RTD Theme to latest version
+
 ## 0.10-revision-1 (2017-11-29)
 
 * Revised for Asakusa Framework version 0.10.0
