@@ -26,7 +26,7 @@ make html
 Then, open your browser to ``build/html/index.html``.
 
 ## Patch contribution
-* Please contribute with patches according to our [contribution guide (Japanese only, English version to be added)](http://docs.asakusafw.com/latest/release/ja/html/contribution.html)
+* Please contribute with patches according to our [contribution guide (Japanese only, English version to be added)](https://docs.asakusafw.com/latest/release/ja/html/contribution.html)
 
 ## License
 * [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
