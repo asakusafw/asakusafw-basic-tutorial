@@ -243,7 +243,7 @@ sales_detailシート
 
 ここでは最も単純なテストケースとして定義するため、以下の1レコードのみを定義します。
 
-..  csv-table:: ``simple.xls`` - ``item_info``
+..  csv-table:: ``simple.xls`` - ``sales_detail``
     :header: sales_date_time,store_code,item_code,amount,selling_price
 
     2011-01-01 00:00:00,0001,0001,1,100
