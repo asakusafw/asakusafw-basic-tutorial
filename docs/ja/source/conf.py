@@ -39,13 +39,13 @@ extensions = [
 [extensions]
 
 extlinks = {
-    'asakusafw': ('https://docs.asakusafw.com/0.10.3/release/ja/html/%s',  None),
+    'asakusafw': ('https://docs.asakusafw.com/0.10.4/release/ja/html/%s',  None),
     'jinrikisha': ('https://docs.asakusafw.com/jinrikisha/ja/html/%s', None),
 }
 
 javadoclinks = {
-    'javadoc': ('https://docs.asakusafw.com/0.10.3/release/api/%s.html', ""),
-    'gradledoc': ('https://docs.asakusafw.com/0.10.3/release/gradle-plugins/%s.html', "")
+    'javadoc': ('https://docs.asakusafw.com/0.10.4/release/api/%s.html', ""),
+    'gradledoc': ('https://docs.asakusafw.com/0.10.4/release/gradle-plugins/%s.html', "")
 }
 
 # Add any paths that contain templates here, relative to this directory.
