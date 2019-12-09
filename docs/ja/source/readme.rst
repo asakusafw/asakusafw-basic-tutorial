@@ -30,8 +30,8 @@
 Spark や関連する `Apache Hadoop`_ については本チュートリアルでは解説しませんので、
 この部分についてはSparkやHadoopの基本的な知識があることを前提としています。
 
-..  _`Apache Spark`: http://spark.apache.org/
-..  _`Apache Hadoop`: http://hadoop.apache.org/
+..  _`Apache Spark`: https://spark.apache.org/
+..  _`Apache Hadoop`: https://hadoop.apache.org/
 
 サンプルアプリケーション
 ========================

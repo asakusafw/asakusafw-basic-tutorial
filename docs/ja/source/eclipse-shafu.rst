@@ -60,7 +60,7 @@ Shafuのインストール
 Asakusa Frameworkには開発支援ツールを提供する :jinrikisha:`Jinrikisha <index.html>` というサブプロジェクトがあります。
 そこで公開しているツール :jinrikisha:`Shafu <shafu.html>` はAsakusa Frameworkのアプリケーション開発を支援するEclipseプラグインです。
 
-Asakusa Frameworkではアプリケーションのビルドに `Gradle <http://www.gradle.org/>`_ というビルドシステムを利用しますが、
+Asakusa Frameworkではアプリケーションのビルドに `Gradle <https://gradle.org/>`_ というビルドシステムを利用しますが、
 Shafuを使うことでGradleに関する詳細な知識がなくてもAsakusa Frameworkの基本的な開発作業が行えるようになります。
 また、コマンドライン上でのGradleの操作が不要となり、Eclipse上でアプリケーション開発に必要なほとんどの作業を行うことができるようになります。
 
@@ -76,7 +76,7 @@ Shafuは一般的なEclipseプラグインと同様の手順でEclipseにイン�
     * - :guilabel:`Name:`
       - ``Jinrikisha``
     * - :guilabel:`Location:`
-      - ``http://www.asakusafw.com/eclipse/jinrikisha/updates/``
+      - ``https://www.asakusafw.com/eclipse/jinrikisha/updates/``
 
 4. Install ダイアログに表示された :guilabel:`Jinrikisha (人力車)` カテゴリを展開して :guilabel:`Asakusa Gradle プラグインサポート` を選択し、 :guilabel:`Next >` ボタンを押下します。
 

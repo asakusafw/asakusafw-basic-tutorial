@@ -19,10 +19,10 @@
     * - OS
       - Windows, MacOSX, Linux
       -
-    * - `JDK <http://www.oracle.com/technetwork/java/javase/downloads/index.html>`_
+    * - `JDK <https://www.oracle.com/technetwork/java/javase/downloads/index.html>`_
       - JDK 8
       - JREは利用不可 [#]_
-    * - `Eclipse <http://www.eclipse.org/downloads/>`_
+    * - `Eclipse <https://www.eclipse.org/downloads/>`_
       - バージョン 4.4.2 以上
       -
     * - Excel

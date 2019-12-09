@@ -6,9 +6,9 @@ Basic tutorial documentation for [Asakusa Framework](https://github.com/asakusaf
 
 ## How to Build
 
-This tutorial uses the [Sphinx](http://www.sphinx-doc.org) documentation system.
+This tutorial uses the [Sphinx](https://www.sphinx-doc.org) documentation system.
 
-Building the documentation requires at least version 1.4 of [Sphinx](http://www.sphinx-doc.org) and the [Sphinx RTD Theme](https://pypi.python.org/pypi/sphinx_rtd_theme), [pygments-dmdl](https://pypi.python.org/pypi/pygments-dmdl) have to be installed.
+Building the documentation requires at least version 1.4 of [Sphinx](https://www.sphinx-doc.org) and the [Sphinx RTD Theme](https://pypi.python.org/pypi/sphinx_rtd_theme), [pygments-dmdl](https://pypi.python.org/pypi/pygments-dmdl) have to be installed.
 
 ```
 pip install sphinx

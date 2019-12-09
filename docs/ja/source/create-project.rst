@@ -56,7 +56,7 @@ Shafuを導入したEclipse環境では、ウィザードに従ってプロジ�
 
 Shafuを導入したEclipse以外の環境を利用する場合は、以下のURLに公開されているプロジェクトテンプレートをダウンロードして展開してください。
 
-* `asakusa-spark-template-0.10.3.tar.gz <http://www.asakusafw.com/download/gradle-plugin/asakusa-spark-template-0.10.3.tar.gz>`_
+* `asakusa-spark-template-0.10.3.tar.gz <https://www.asakusafw.com/download/gradle-plugin/asakusa-spark-template-0.10.3.tar.gz>`_
 
 IDEを利用する場合はこのプロジェクトをIDEにインポートしてください。
 
