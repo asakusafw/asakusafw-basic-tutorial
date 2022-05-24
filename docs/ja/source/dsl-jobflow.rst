@@ -186,7 +186,7 @@ Direct I/Oの設定に基づいてベースパスからファイルシステム�
     * - ベースパス
       - ``master``
     * - リソースパターン
-      - ``store_info.csv``
+      - ``item_info.csv``
     * - データサイズ
       - ``DataSize.LARGE`` （大きい）
 
